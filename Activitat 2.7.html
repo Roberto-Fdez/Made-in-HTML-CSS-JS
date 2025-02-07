@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulari de registre - Pàgina de videojocs</title>
+</head>
+<link rel="stylesheet" href="Activitat 2.7.css">
+<body>
+    <main class="Color#cdcdc3">
+<header class="ClaseHeader">
+    <h2>Formulari de registre.</h2>
+    <p id= introduccion>Introdueix les teves dades per continuar amb el registre:</p>
+</header>
+
+    <form action="processar_registre.php" method="post">
+
+        <div><label for="nom">Nom (obligatori):</label>
+        <input type="text" id="nom" name="nom" required></div>
+
+        <div><label for="edat">Edat (obligatori, mínim 18 anys):</label>
+        <input type="number" id="edat" name="edat" min="18" required></div>
+
+        <div><label for="email">Correu electrònic (obligatori):</label>
+        <input type="email" id="email" name="email" required></div>
+
+        <div><label for="contrasenya">Contrasenya (6-12 caràcters, obligatori):</label>
+        <input type="password" id="contrasenya" name="contrasenya" minlength="6" maxlength="12" required></div>
+
+        <div><label for="consoles">Consoles favorites:</label>
+        <select id="consoles" name="consoles[]" multiple required>
+            <option value="Nintendo Switch">Nintendo Switch</option>
+            <option value="PS5">PS5</option>
+            <option value="Xbox Series X">Xbox Series X</option>
+            <option value="Xbox Series S">Xbox Series S</option>
+            <option value="Steam Deck">Steam Deck</option>
+            <option value="Altres">Altres</option>
+        </select>
+    </div>
+        <div><label>
+            <input type="checkbox" name="notificacions" value="1"> Vull subscriure'm a les notificacions per correu electrònic.
+        </label></div>
+
+        <div><label for="comentaris">Comentaris:</label>
+        <textarea id="comentaris" name="comentaris" cols="50" rows="7"></textarea>
+
+        <input type="submit" value="Registrar-se"></div>
+    </form>
+    </main>
+    <footer> 
+        <p>La meva pàgina de Videojocs. Tots els drets reservats. </p>
+    </footer>
+</body>
+
+</html>

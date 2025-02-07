@@ -1,0 +1,52 @@
+body {
+    font-family: Verdana;
+    margin: 0;
+    padding: 0;
+    background-color: #ede7e0;
+}
+
+label {
+    color: #519674;
+}
+
+input {
+    width: 200px;
+}
+
+.Color#cdcdc3 {
+    background-color: #cdcdc3;
+}
+
+#comentaris {
+    background-color: #8dac99;
+}
+
+div {
+    margin: 5px;
+}
+
+.ClaseHeader {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #519674, #cdcdc3);
+}
+
+[min] {
+    background-color: #8dac99;
+}
+
+select[required] {
+    background-color: #8dac99;
+    height: 110px;
+}
+
+input[type="text"] {
+    background-color: #8dac99;
+}
+
+input[type="submit"] {
+    background-color: #8dac99;
+    color: white;
+}
